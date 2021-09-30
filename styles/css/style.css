@@ -6,15 +6,24 @@
 body {
 	/* Applies to everything within <body> tag */
 	background-color: beige;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 
 .todo-list .cs_todoList .footer_pagedetails {
 	/* .<class> = Class */
-	font-size: 1%;
+	font-size: 0.5%;
 }
 
 #id_todo_general {
 	/* #<id> = ID */
 	font-weight: bold;
 }
+
+#site-head {
+	color: black;
+}
+
