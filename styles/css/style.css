@@ -27,3 +27,10 @@ body {
 	color: black;
 }
 
+.headers {
+	/*
+		All group headers (i.e. group 'about-me' : "About Me")
+	*/
+	font-weight: bold;
+	text-decoration: underline;
+}
