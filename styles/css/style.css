@@ -9,9 +9,9 @@ body {
 }
 
 
-.todo-list .cs_todoList {
+.todo-list .cs_todoList .footer_pagedetails {
 	/* .<class> = Class */
-	font-size: 5%;
+	font-size: 1%;
 }
 
 #id_todo_general {
