@@ -1,0 +1,20 @@
+* {
+	/* Wildcard - applies to all */
+	font-style: italic;
+}
+
+body {
+	/* Applies to everything within <body> tag */
+	background-color: beige;
+}
+
+
+.todo-list .cs_todoList {
+	/* .<class> = Class */
+	font-size: 5%;
+}
+
+#id_todo_general {
+	/* #<id> = ID */
+	font-weight: bold;
+}
