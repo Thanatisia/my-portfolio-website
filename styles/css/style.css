@@ -34,3 +34,36 @@ body {
 	font-weight: bold;
 	text-decoration: underline;
 }
+
+.blogposts {
+	/* 
+		Class
+		- For each Post in the blog
+		- Container Box seperator
+	*/
+	border-radius: 5%;
+}
+
+.article {
+	/*
+		Class
+		- For each article in the blog post
+	*/
+}
+
+.article-title {
+	/*
+		Class
+		- For the title of the article
+	*/
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.article-body {
+	/*
+		Class
+		- For the body of the article in the blog post
+	*/
+	
+}
