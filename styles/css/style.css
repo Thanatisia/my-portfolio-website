@@ -21,10 +21,23 @@ body {
 }
 
 #site-head {
-	color: black;
+	/* 
+		color: black; 
+		- Top of the page
+	*/
 }
 
 /* Classes */
+.dark_mode {
+	background-color: black;
+	color: white;
+}
+
+.light_mode {
+	background-color: white;
+	color: black;
+}
+
 .todo-list .cs_todoList .footer_pagedetails {
 	/* .<class> = Class */
 	font-size: 0.5%;

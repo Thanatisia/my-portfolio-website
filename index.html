@@ -17,7 +17,27 @@
 		Body & Start of Page
 	-->
 	<body>
-		<h1 id="site-head" style="text-align: center;">
+		<h4>
+			<!--
+				Toggle between
+					Dark Mode (Black Background) 
+					and 
+					Light Mode (Original color)
+			-->
+			<button onclick="toggle_mode()">
+				Toggle Mode
+			</button>
+			<script id="toggle_mode">
+				function toggle_mode()
+				{
+					var curr_mode = "light";
+					var element = document.body;
+					element.classList.toggle("dark_mode");
+				}
+			</script>
+		</h4>
+
+		<h1 style="text-align: center;">
 			Asura <br/>
 			~ My Portfolio Website ~
 		</h1>
