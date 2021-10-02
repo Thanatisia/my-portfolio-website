@@ -19,3 +19,11 @@ function create_test_buttons() {
 }
 
 create_test_buttons();
+
+/* Real Functions Here */
+function toggle_mode()
+{
+	var curr_mode = "light";
+	var element = document.body;
+	element.classList.toggle("dark_mode");
+}
