@@ -3,6 +3,8 @@
 	font-style: italic;
 }
 
+/* Tags & Elements */
+
 body {
 	/* Applies to everything within <body> tag */
 	background-color: beige;
@@ -11,7 +13,6 @@ body {
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
-
 
 /* IDs */
 #id_todo_general {
@@ -93,4 +94,9 @@ body {
 		Allow div to fill the remaining width of the parent 
 	*/
 	flex-grow: 1;
+}
+
+.li-horizontal {
+	display:inline;
+	padding-right: 5%;
 }
