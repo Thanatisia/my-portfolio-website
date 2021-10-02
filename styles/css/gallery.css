@@ -1,6 +1,11 @@
 .column {
-	/* The grid: Four equal columns that floats next to each other */
+	/* The grid: equal columns that floats next to each other */
 	float: left;
 	width: 30%;
 	padding: 1%;
+}
+
+.row {
+	/* The row: */
+	margin-bottom: 5%;
 }

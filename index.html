@@ -38,6 +38,10 @@
 			<li><a href="#pages">Pages</a></li>
 		</ul>
 
+		<datalist id="pages">
+			<option value="TODO List"></option>
+		</datalist>
+
 		<hr/>
 
 		<!-- Subgroup:
@@ -103,7 +107,8 @@
 			<p class="headers">Contacts</p>
 			GitHub: <a href="https://github.com/Thanatisia">Thanatisia</a> <br/>
 			Fiverr: fortissimasura<br/>
-			Twitter: <a href="https://twitter.com/phantasu">@phantasu</a> 
+			Twitter: <a href="https://twitter.com/phantasu">@phantasu</a> <br/>
+			Email: <a href="mailto:{BusyBusiness@protonmail.com}?subject={(Suggestions|Ideas|Bugs|Improvements|General) To Note}">BusyBusiness1@protonmail.com</a>
 		</div>
 
 		<hr/>
@@ -114,7 +119,10 @@
 		<div id="my-projects">
 			<p class="headers">My Projects</p>
 			<ul> 
-				<h3>These are some of my recommended/current projects</h3>
+				<h3>
+					These are the summary of some of my recommended/current projects, <br/>
+					to find out more, please refer to <a href="sites/repositories.html">My Projects</a>
+				</h3>
 				<li>
 					<a href="https://github.com/Thanatisia/SharedSpace">SharedSpace</a> | This project aims to hold documentations, projects and codes regarding various things such as (but not limited to) <br/>
 					1. Linux (installation guides, documentations, steps, installation scripts) <br/>
@@ -122,97 +130,15 @@
 					3. Snippets <br/>
 					4. Dotfiles <br/>
 					5. Configs <br/>
-					- An example of what I recommend with regards to this repository are my Linux install-scripts, such as my <br/>
+					- Some notable files/folders are my
 					<ul>
-						<li>
-							<h4> 
-								1. ArchLinux Install Scripts <br/>
-								<div id="installscript-intro">
-									<h4 class="headers">Introduction</h4>
-									I created this install script with the following basic principles in mind:
-									<ul>
-										<li>Modular</li>
-										<li>Portable</li>
-										<li>Reusable</li>
-									</ul>
-									The primary purpose was so that I can create a linux profile where I can bring around and have the convenience of reinstalling the linux distro whenever required with the same specifications, everytime - with as little keystrokes as possible. <br/>
-									This first started with ArchLinux, thus currently I only have a ArchLinux install script - however, i made documentation, step-by-step installation guides for <b>Debian via Debootstrap (referenced from the debootstrap docs)</b> and <b>Void Linux via chroot (referenced from the void linux chroot docs)</b>. <br/>
-								</div>
-
-								<hr/>
-								
-								<div id="installscript-manual">
-									<h4 class="headers">How to use?</h4>
-									1. Before Executing <br/>
-									1.1. Open up the script <br/>
-									1.2. Change the variables <br/>
-									1.2.1. Populate base-installation details such as
-									<ul>
-										<li>Device Details (Device name '/dev/sdX', Partitions etc.)</li>
-										<li>System Details</li>
-										<li>User Details</li>
-										<li>Basic Profile Information</li>
-										<li>Packages to install on base-install</li>
-									</ul>
-									1.3. Backup the script (OPTIONAL) <br/>
-									1.4. Ensure you have arch-chroot <br/>
-									<ul>
-										<li>Currently - as of 2021-10-01 1422H - this utilizes arch-chroot;</li>
-										<li>thus you will require a arch-based distro or install arch-chroot)</li>
-										<li>I recommend using this with the latest release of the arch installer, use wget to download the script</li>
-									</ul>
-									2. Execute script and let it load <br/>
-									3. Done <br/>
-									<br/>
-									You do not need to change the functions (unless the purpose is to modify it).
-									Now you can just bring this script to the next computer, rinse and repeat steps [1.4-3].<br/>
-									You can even place this on a shared drive and run it simultaneously on multiple computers with the same build! (please help me test that, at the moment I only had a test case of 5 VMs :^V, thank you!)
-								</div>
-
-								<hr/>
-
-								<div id="installscript-files">
-									<h4 class="headers">Files in installscript folders</h4>
-									<ul>
-										<li>
-											installer-manual.sh
-											<p>
-												This is the original version of the ArchLinux install script as well as the original vision. <br/>
-												This version requires the user to modify the Associative Arrays, you do not need to touch the functions (unless the purpose is to modify). <br/>
-												All you need to do is scroll down through the Associative Arrays, populate them and thats it, you can just backup and run. <br/>
-											</p>
-										</li>
-										<li>
-											installer-ux.min.sh
-											<p>
-												This is my "Minimal" form of the ArchLinux install script. <br/>
-												With this version, I have made a set of variables on top that corresponds with the associative arrays below (linked to the functions). <br/>
-												Thus, with this version, you can just edit everything under "EDIT THIS" without touching the associative arrays, back it up and run it, as opposed to installer-manual.sh which uses the Associative Arrays instead.
-											</p>
-										</li>
-									</ul>
-								</div>
-
-								<hr/>
-
-								<div id="installscript-variations">
-									Variations:<br/>
-									<div id="archinstallscript-template">
-										<a href="https://github.com/Thanatisia/SharedSpace/tree/main/Linux/dotfiles/distros/ArchLinux/profiles/Reference_Profile-1/install-scripts">ArchLinux Installscript Template</a> | This is the template variation - Each variable and/or Associative Arrays are labelled with the default/recommended values and what kind of value should go into it. <br/>
-										Optional and Required variable fields are also marked out to make usability better.
-									</div>
-									<div id="archinstallscript-prebuilt">
-										<a href="https://github.com/Thanatisia/SharedSpace/tree/main/Linux/dotfiles/distros/ArchLinux/profiles/VBox_USBoot-1/install-scripts">ArchLinux Installscript Pre-Built Design</a> | This is the prebuilt variation - This has been predesigned with one of my builds in mind and has been tested to be stable (on my VM). <br/>
-										With this, you can look through the variables and recreate the requirements and test it out before using the template and/or modifying this to fit your requirements.
-									</div>
-								</div>
-
-								<hr/>
-							</h4>
-						</li>
+						<li>ArchLinux Install Script(s)</li>
+						<li>Distro installation guides</li>
+						<li>Git usage documentation</li>
 					</ul>
 					Please feel free to contribute to this repository as well as provide any feedbacks, ideas and/or just general discussion about the projects via my contacts provided or dm <br/>
-					Thank you very much if you are contributing to the project! I hope this project is helpful in some/any aspects! Credits will be provided as duly as possible <br/>
+					Thank you very much if you are contributing to the project! I hope this project is helpful in some/any aspects! <br/>
+					Credits will be provided as duly as possible <br/>
 				</li>
 				<li>
 					<a href="https://github.com/Thanatisia/My-Python-Modules">My-Python-Modules</a> | This repository contains all python modules created by and/or contributed by other members. <br/>
@@ -235,15 +161,12 @@
 		-->
 		<div id="pages"> 
 			<p class="headers">Pages</p>
-			<a href="sites/todolist.html">
-				1. TODO List |>
-			</a> <br/>
-			<a href="sites/gallery.html">
-				2. Gallery |>
-			</a> <br/>
-			<a href="sites/blog.html">
-				3. Blog |>
-			</a>
+			<ol>
+				<li><a href="sites/repositories.html">My Projects</a></li>
+				<li><a href="sites/todolist.html">TODO List</a> </li>
+				<li><a href="sites/gallery.html">Gallery</a> </li>
+				<li><a href="sites/blog.html">Blog</a></li>
+			</ol>
 		</div>
 
 		<hr/>

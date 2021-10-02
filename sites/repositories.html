@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Title Here</title>
+		<!-- Import external styles -->
+		<link href="../styles/css/responsive.css" type="text/css" rel="stylesheet"/>
+		<link href="../styles/css/style.css" type="text/css" rel="stylesheet" defer async/>
+		<link href="../styles/css/gallery.css" type="text/css" rel="stylesheet"/>
+		<!-- Import external scripts -->
+		<script src="../scripts/js/script.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1 style="text-align: center;">
+			My Projects & Repositories
+		</h1> 
+
+		<hr/>
+
+		<div id="pages"> 
+			<p class="headers">Pages</p>
+			<ul>
+				<li><a href="../index.html">Home Page</a></li>
+			</ul>
+		</div>
+
+		<hr/>
+
+		<h3>
+			These are the complete documentation and write-up of some of my recommended/current projects <br/>
+		</h3>
+		
+		<hr/>
+
+		<!-- Subgroup:
+			- Pages
+		-->
+		<div class="row">
+			<!-- Subgroup:
+				- Recommended Projects
+			-->
+			<div id="recommended">
+				<p class="headers">Recommended files</p>
+				<ul>
+					<li><a href="#proj_sharedspace">SharedSpace</a></li>
+				</ul>
+			</div>
+
+			<hr/>
+
+			<!-- Subgroup:
+				- My Projects
+			-->
+			<div id="my-projects">
+				<p class="headers">My Projects</p>
+				<ul> 
+					<h3>
+						<li id="proj_sharedspace">
+							<a href="https://github.com/Thanatisia/SharedSpace">SharedSpace</a> | This project aims to hold documentations, projects and codes regarding various things such as (but not limited to) <br/>
+							1. Linux (installation guides, documentations, steps, installation scripts) <br/>
+							2. Programming/Web Development Language guides <br/>
+							3. Snippets <br/>
+							4. Dotfiles <br/>
+							5. Configs <br/>
+							- An example of what I recommend with regards to this repository are my Linux install-scripts, such as my <br/>
+							<ul>
+								<li>
+									<h4> 
+										1. ArchLinux Install Scripts <br/>
+										<div id="installscript-intro">
+											<h4 class="headers">Introduction</h4>
+											I created this install script with the following basic principles in mind:
+											<ul>
+												<li>Modular</li>
+												<li>Portable</li>
+												<li>Reusable</li>
+											</ul>
+											The primary purpose was so that I can create a linux profile where I can bring around and have the convenience of reinstalling the linux distro whenever required with the same specifications, everytime - with as little keystrokes as possible. <br/>
+											This first started with ArchLinux, thus currently I only have a ArchLinux install script - however, i made documentation, step-by-step installation guides for <b>Debian via Debootstrap (referenced from the debootstrap docs)</b> and <b>Void Linux via chroot (referenced from the void linux chroot docs)</b>. <br/>
+										</div>
+
+										<hr/>
+										
+										<div id="installscript-manual">
+											<h4 class="headers">How to use?</h4>
+											1. Before Executing <br/>
+											1.1. Open up the script <br/>
+											1.2. Change the variables <br/>
+											1.2.1. Populate base-installation details such as
+											<ul>
+												<li>Device Details (Device name '/dev/sdX', Partitions etc.)</li>
+												<li>System Details</li>
+												<li>User Details</li>
+												<li>Basic Profile Information</li>
+												<li>Packages to install on base-install</li>
+											</ul>
+											1.3. Backup the script (OPTIONAL) <br/>
+											1.4. Ensure you have arch-chroot <br/>
+											<ul>
+												<li>Currently - as of 2021-10-01 1422H - this utilizes arch-chroot;</li>
+												<li>thus you will require a arch-based distro or install arch-chroot)</li>
+												<li>I recommend using this with the latest release of the arch installer, use wget to download the script</li>
+											</ul>
+											2. Execute script and let it load <br/>
+											3. Done <br/>
+											<br/>
+											You do not need to change the functions (unless the purpose is to modify it).
+											Now you can just bring this script to the next computer, rinse and repeat steps [1.4-3].<br/>
+											You can even place this on a shared drive and run it simultaneously on multiple computers with the same build! (please help me test that, at the moment I only had a test case of 5 VMs :^V, thank you!)
+										</div>
+
+										<hr/>
+
+										<div id="installscript-files">
+											<h4 class="headers">Files in installscript folders</h4>
+											<ul>
+												<li>
+													installer-manual.sh
+													<p>
+														This is the original version of the ArchLinux install script as well as the original vision. <br/>
+														This version requires the user to modify the Associative Arrays, you do not need to touch the functions (unless the purpose is to modify). <br/>
+														All you need to do is scroll down through the Associative Arrays, populate them and thats it, you can just backup and run. <br/>
+													</p>
+												</li>
+												<li>
+													installer-ux.min.sh
+													<p>
+														This is my "Minimal" form of the ArchLinux install script. <br/>
+														With this version, I have made a set of variables on top that corresponds with the associative arrays below (linked to the functions). <br/>
+														Thus, with this version, you can just edit everything under "EDIT THIS" without touching the associative arrays, back it up and run it, as opposed to installer-manual.sh which uses the Associative Arrays instead.
+													</p>
+												</li>
+											</ul>
+										</div>
+
+										<hr/>
+
+										<div id="installscript-variations">
+											Variations:<br/>
+											<div id="archinstallscript-template">
+												<a href="https://github.com/Thanatisia/SharedSpace/tree/main/Linux/dotfiles/distros/ArchLinux/profiles/Reference_Profile-1/install-scripts">ArchLinux Installscript Template</a> | This is the template variation - Each variable and/or Associative Arrays are labelled with the default/recommended values and what kind of value should go into it. <br/>
+												Optional and Required variable fields are also marked out to make usability better.
+											</div>
+											<div id="archinstallscript-prebuilt">
+												<a href="https://github.com/Thanatisia/SharedSpace/tree/main/Linux/dotfiles/distros/ArchLinux/profiles/VBox_USBoot-1/install-scripts">ArchLinux Installscript Pre-Built Design</a> | This is the prebuilt variation - This has been predesigned with one of my builds in mind and has been tested to be stable (on my VM). <br/>
+												With this, you can look through the variables and recreate the requirements and test it out before using the template and/or modifying this to fit your requirements.
+											</div>
+										</div>
+
+										<hr/>
+									</h4>
+								</li>
+							</ul>
+							Please feel free to contribute to this repository as well as provide any feedbacks, ideas and/or just general discussion about the projects via my contacts provided or dm <br/>
+							Thank you very much if you are contributing to the project! I hope this project is helpful in some/any aspects! Credits will be provided as duly as possible <br/>
+						</li>
+						<li id="proj_my-python-modules">
+							<a href="https://github.com/Thanatisia/My-Python-Modules">My-Python-Modules</a> | This repository contains all python modules created by and/or contributed by other members. <br/>
+							- Contributed modules are mentioned and recognized, so please feel free to contribute! <br/>
+							Thank you very much for checking out this repo
+						</li>
+						<li id="proj_edx-center">
+							<a href="https://thanatisia.github.io/EDX-Center">EDX Center</a> | This is my portable, reusable and modular {TestBench|PracticeGround|LearningRoom} Knowledge Management Center I created to Learn, Practice, Plan, Test and Implement new ideas and concepts that can eventually be reused in other project. <br/>
+							All you need to do is just go to the concept you want, look at the source code and refer to it in your new project. <br/>
+							Much like my other projects, all contributions will be mentioned and recognized, please feel free to contribute and thank you!
+						</li>
+					</h3>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
