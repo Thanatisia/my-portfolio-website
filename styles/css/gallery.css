@@ -1,11 +1,12 @@
 .column {
 	/* The grid: equal columns that floats next to each other */
 	float: left;
-	width: 30%;
+	width: 15%;
 	padding: 1%;
+	margin-right: 2%;
 }
 
 .row {
 	/* The row: */
-	margin-bottom: 5%;
+	margin-bottom: 1%;
 }

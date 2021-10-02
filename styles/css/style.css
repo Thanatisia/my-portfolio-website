@@ -13,11 +13,7 @@ body {
 }
 
 
-.todo-list .cs_todoList .footer_pagedetails {
-	/* .<class> = Class */
-	font-size: 0.5%;
-}
-
+/* IDs */
 #id_todo_general {
 	/* #<id> = ID */
 	font-weight: bold;
@@ -25,6 +21,12 @@ body {
 
 #site-head {
 	color: black;
+}
+
+/* Classes */
+.todo-list .cs_todoList .footer_pagedetails {
+	/* .<class> = Class */
+	font-size: 0.5%;
 }
 
 .headers {
@@ -37,7 +39,6 @@ body {
 
 .blogposts {
 	/* 
-		Class
 		- For each Post in the blog
 		- Container Box seperator
 	*/
@@ -46,14 +47,12 @@ body {
 
 .article {
 	/*
-		Class
 		- For each article in the blog post
 	*/
 }
 
 .article-title {
 	/*
-		Class
 		- For the title of the article
 	*/
 	font-weight: bold;
@@ -62,8 +61,36 @@ body {
 
 .article-body {
 	/*
-		Class
 		- For the body of the article in the blog post
 	*/
-	
+
+}
+
+.block {
+	/*
+		- To create a black border around each "group"
+	*/
+	border:1px solid blue;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	padding-left: 2%;
+}
+
+.flex-container {
+	/*
+		Create a flexbile display/container of the div
+	*/
+	display: flex;
+	gap: 5px;
+}
+
+.fixed {
+	width: 200px;
+}
+
+.flex-item {
+	/*
+		Allow div to fill the remaining width of the parent 
+	*/
+	flex-grow: 1;
 }

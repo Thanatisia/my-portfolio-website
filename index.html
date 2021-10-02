@@ -8,6 +8,7 @@
 		<!-- Import external styles -->
 		<link href="styles/css/style.css" type="text/css" rel="stylesheet"/>
 		<link href="styles/css/responsive.css".css type="text/css" rel="stylesheet"/>
+		<link href="styles/css/gallery.css".css type="text/css" rel="stylesheet"/>
 		<!-- Import external scripts -->
 		<script src="scripts/js/script.js" type="text/javascript" defer async></script>
 	</head>
@@ -21,12 +22,6 @@
 			~ My Portfolio Website ~
 		</h1>
 
-		<p>Hello World!
-		This is a work-in-progress
-		</p>
-
-		<hr/>
-
 		<!-- 
 			Table of Contents
 		-->
@@ -38,16 +33,10 @@
 			<li><a href="#pages">Pages</a></li>
 		</ul>
 
-		<datalist id="pages">
-			<option value="TODO List"></option>
-		</datalist>
-
-		<hr/>
-
 		<!-- Subgroup:
 			- About Me
 		-->
-		<div id="about-me">
+		<div id="about-me" class="block">
 			<p class="headers">About Me</p>
 
 			<!-- Part 1: Introduction -->
@@ -97,8 +86,6 @@
 				</ul>
 			</h3>
 		</div>
-		
-		<hr/>
 
 		<!-- Subgroup:
 			- Contacts
@@ -111,19 +98,17 @@
 			Email: <a href="mailto:{BusyBusiness@protonmail.com}?subject={(Suggestions|Ideas|Bugs|Improvements|General) To Note}">BusyBusiness1@protonmail.com</a>
 		</div>
 
-		<hr/>
-
 		<!-- Subgroup:
 			- My Projects
 		-->
 		<div id="my-projects">
 			<p class="headers">My Projects</p>
-			<ul> 
-				<h3>
-					These are the summary of some of my recommended/current projects, <br/>
-					to find out more, please refer to <a href="sites/repositories.html">My Projects</a>
-				</h3>
-				<li>
+			<h3>
+				These are the summary of some of my recommended/current projects, <br/>
+				to find out more, please refer to <a href="sites/repositories.html">My Projects</a>
+			</h3>
+			<div class="row flex-container">
+				<div class="block">
 					<a href="https://github.com/Thanatisia/SharedSpace">SharedSpace</a> | This project aims to hold documentations, projects and codes regarding various things such as (but not limited to) <br/>
 					1. Linux (installation guides, documentations, steps, installation scripts) <br/>
 					2. Programming/Web Development Language guides <br/>
@@ -139,37 +124,21 @@
 					Please feel free to contribute to this repository as well as provide any feedbacks, ideas and/or just general discussion about the projects via my contacts provided or dm <br/>
 					Thank you very much if you are contributing to the project! I hope this project is helpful in some/any aspects! <br/>
 					Credits will be provided as duly as possible <br/>
-				</li>
-				<li>
+				</div>
+
+				<div class="block">
 					<a href="https://github.com/Thanatisia/My-Python-Modules">My-Python-Modules</a> | This repository contains all python modules created by and/or contributed by other members. <br/>
 					- Contributed modules are mentioned and recognized, so please feel free to contribute! <br/>
 					Thank you very much for checking out this repo
-				</li>
-				<li>
+				</div>
+
+				<div class="block">
 					<a href="https://thanatisia.github.io/EDX-Center">EDX Center</a> | This is my portable, reusable and modular {TestBench|PracticeGround|LearningRoom} Knowledge Management Center I created to Learn, Practice, Plan, Test and Implement new ideas and concepts that can eventually be reused in other project. <br/>
 					All you need to do is just go to the concept you want, look at the source code and refer to it in your new project. <br/>
 					Much like my other projects, all contributions will be mentioned and recognized, please feel free to contribute and thank you!
-				</li>
-			</ul>
+				</div>
+			</div>
 		</div>
-
-
-		<hr/>
-
-		<!-- Subgroup:
-			- Pages
-		-->
-		<div id="pages"> 
-			<p class="headers">Pages</p>
-			<ol>
-				<li><a href="sites/repositories.html">My Projects</a></li>
-				<li><a href="sites/todolist.html">TODO List</a> </li>
-				<li><a href="sites/gallery.html">Gallery</a> </li>
-				<li><a href="sites/blog.html">Blog</a></li>
-			</ol>
-		</div>
-
-		<hr/>
 
 	</body>
 
@@ -177,10 +146,25 @@
 		Footer & End of Page
 	-->
 	<footer>
-		<div class="footer_pagedetails">
-			<h3>
-				Page: index
-			</h3>
+		<div class="footer">
+			<div class="footer_pagedetails">
+				<h3>
+					Page: index
+				</h3>
+			</div>
+	
+			<!-- Subgroup:
+				- Pages
+			-->
+			<div id="pages"> 
+				<p class="headers">Pages</p>
+				<ol>
+					<li><a href="sites/repositories.html">My Projects</a></li>
+					<li><a href="sites/todolist.html">TODO List</a> </li>
+					<li><a href="sites/gallery.html">Gallery</a> </li>
+					<li><a href="sites/blog.html">Blog</a></li>
+				</ol>
+			</div>
 		</div>
 	</footer>
 </html>
