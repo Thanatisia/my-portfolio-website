@@ -1,13 +1,13 @@
 * {
 	/* Wildcard - applies to all */
-	font-style: italic;
 }
 
 /* Tags & Elements */
 
 body {
 	/* Applies to everything within <body> tag */
-	background-color: beige;
+	background-color: #bdcdf2;
+	font-style: normal;
 	margin-left: 5%;
 	margin-right: 5%;
 	margin-top: 5%;
@@ -35,6 +35,7 @@ body {
 		All group headers (i.e. group 'about-me' : "About Me")
 	*/
 	font-weight: bold;
+	font-style: italic;
 	text-decoration: underline;
 }
 
