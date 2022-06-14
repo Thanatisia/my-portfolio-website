@@ -15,6 +15,15 @@ body {
 }
 
 /* IDs */
+#list_table_of_Contents {
+    /* Table of Contents */
+    border:1px solid blue;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	padding-left: 2%;
+    padding-bottom: 1%;
+}
+
 #id_todo_general {
 	/* #<id> = ID */
 	font-weight: bold;
@@ -113,4 +122,11 @@ body {
 .li-horizontal {
 	display:inline;
 	padding-right: 5%;
+}
+
+.format-enlarge {
+    /*
+     * Format texts to have bigger borders
+     */
+
 }
